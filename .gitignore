@@ -37,3 +37,4 @@ build/
 
 ### uni-app ###
 unpackage
+node_modules
