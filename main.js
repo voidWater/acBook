@@ -13,6 +13,9 @@ Vue.component('plugin',plugin)
 import cuCustom from './colorui/components/cu-custom.vue'
 Vue.component('cu-custom',cuCustom)
 
+import api from './pages/acBook/vscomponent/api.vue'
+Vue.component('api',api)
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'

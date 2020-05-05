@@ -57,7 +57,7 @@
 </template>
 <script>
 import uniPopup from "@/components/uni-popup/uni-popup.vue"
-import uQRCode from '../../components/js_sdk/Sansnn-uQRCode/uqrcode.js'
+//import uQRCode from '../../components/js_sdk/Sansnn-uQRCode/uqrcode.js'
 var vsparams = require('./params.js')
 var that;
 /**
@@ -675,23 +675,23 @@ export default {
 				}
 			});
 		},
-		createQrCode(data){
-			console.log(data)
-			uQRCode.make({
-				canvasId: 'qrcode',
-				componentInstance: this,
-				text: 'uQRCode',
-				size: 215,
-				margin: 10,
-				backgroundColor: '#ffffff',
-				foregroundColor: '#000000',
-				fileType: 'jpg',
-				correctLevel: uQRCode.defaults.correctLevel,
-				success: res => {
-					that.vs({type:"nav",url:"/pages/test/poster",data:{avatarUrl:that.vs({type:"getAppInfo",name:'wxUserInfo'}).avatarUrl,qr:res}})
-				}
-			})
-		},
+		// createQrCode(data){
+		// 	console.log(data)
+		// 	uQRCode.make({
+		// 		canvasId: 'qrcode',
+		// 		componentInstance: this,
+		// 		text: 'uQRCode',
+		// 		size: 215,
+		// 		margin: 10,
+		// 		backgroundColor: '#ffffff',
+		// 		foregroundColor: '#000000',
+		// 		fileType: 'jpg',
+		// 		correctLevel: uQRCode.defaults.correctLevel,
+		// 		success: res => {
+		// 			that.vs({type:"nav",url:"/pages/test/poster",data:{avatarUrl:that.vs({type:"getAppInfo",name:'wxUserInfo'}).avatarUrl,qr:res}})
+		// 		}
+		// 	})
+		// },
 		/**
 		 * 存储相关api
 		 */

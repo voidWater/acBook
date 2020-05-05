@@ -22,15 +22,15 @@
 		data() {
 			return {
 				elements: [{
-						title: '布局',
+						title: '收入',
 						name: 'layout',
-						color: 'cyan',
+						color: 'red',
 						cuIcon: 'newsfill'
 					},
 					{
-						title: '背景',
+						title: '支出',
 						name: 'background',
-						color: 'blue',
+						color: 'green',
 						cuIcon: 'colorlens'
 					},
 					{
